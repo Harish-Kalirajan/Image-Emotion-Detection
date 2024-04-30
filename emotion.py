@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 from deepface import DeepFace
-img=cv2.imread("/content/emotion.jpeg")
+img=cv2.imread("emotion.jpeg")
 plt.imshow(img)
 predictions=DeepFace.analyze(img)
 print(predictions)
